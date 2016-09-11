@@ -13,16 +13,15 @@ const collection = [
   {name:"Luciano", gender:"male"}
 ];
 
-const sortedNames = collection
+const orderedNames = collection
                     .filter(hasName)
                     .map(onlyName)
                     .sort();
 
-console.log(sortedNames); 
-
+console.log(orderedNames);
 
 function hasName(item) {
-  return item.name;
+  return !!item.name; //it outputs a boolean
 }
 
 function onlyName(item) {
