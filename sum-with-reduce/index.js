@@ -6,8 +6,11 @@ const items = [
   {name: 'Coffee', price: 3.22}
 ];
 
-const adder = (value, item) => value += item.price;
-const initialValue = 0;
+const adder = (previousValue, currentValue) => previousValue + currentValue;
+const onlyPrice = item => item.price;
 
-const total = items.reduce(adder, initialValue);
+const total = items
+              .map(onlyPrice)
+              .reduce(adder);
+
 console.log('Total: ' + total);
