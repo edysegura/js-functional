@@ -10,7 +10,8 @@ First you need to have NodeJS installed where you are going to run these example
 
  - [Using filter, map and sort together](filter-map-sort/index.js)
  - [Reduce to add prices from a collection](sum-with-reduce/index.js)
+ - [Chainability with reduce](chainability-with-reduce/index.js)
  
 ## References
  
- [Functional programming in JavaScript with MPJ](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+ - [Functional programming in JavaScript with MPJ](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
