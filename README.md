@@ -4,7 +4,11 @@ This is a collection of examples to demonstrate how to take advantage of functio
 
 ## How to run these examples?
 
-First you need to have NodeJS installed where you are going to run these examples. Or copy and past to JSBin. After NodeJS installation completes navigate to directory of your choice and then run ```node index.js``` and check the results.
+First you need to have [Node.js](https://nodejs.org/en/) installed and then navigate to directory of your choice and then run the command below: 
+
+`node index.js`
+
+You may consider to use [JS Bin](http://jsbin.com/?js,console) as an alternative!
 
 ## Examples
 
