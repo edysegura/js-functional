@@ -15,6 +15,7 @@ You may consider to use [JS Bin](http://jsbin.com/?js,console) as an alternative
  - [Using filter, map and sort together](filter-map-sort/index.js)
  - [Reduce to add prices from a collection](sum-with-reduce/index.js)
  - [Chainability with reduce](chainability-with-reduce/index.js)
+ - [Chainability with high order function](chainability-high-order-functions/index.js)
  
 ## References
  
