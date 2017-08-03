@@ -24,7 +24,7 @@ function findByFirstLetter(letter) {
     }
 }
 
-// names.forEach(regularPrint)
+names.forEach(regularPrint)
 
 names
     .sort()
