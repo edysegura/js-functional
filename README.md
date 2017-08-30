@@ -14,9 +14,11 @@ You may consider to use [JS Bin](http://jsbin.com/?js,console) as an alternative
 
  - [Using filter, map and sort together](filter-map-sort/index.js)
  - [Reduce to add prices from a collection](sum-with-reduce/index.js)
+ - [Reduce to group objects](accumulator-with-reduce/index.js)
  - [Chainability with reduce](chainability-with-reduce/index.js)
  - [Chainability with high order function](chainability-high-order-functions/index.js)
  
 ## References
  
  - [Functional programming in JavaScript with MPJ](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+ - [Functional programming and JavaScript Arrays](http://zabana.me/notes/functional-programming-and-javascript-arrays.html)
