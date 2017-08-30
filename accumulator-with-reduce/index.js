@@ -7,13 +7,10 @@ const footballPlayers = [
     { gender: "M", name: "Sofiane Feghouli", age: 26, club: "West Ham United", country: "England" }
 ]
 
-const playerByCountry = { france: [], england: [], spain: [] }
-
 const groupByCountry = (players, player) => {
     players[player.country.toLowerCase()].push(player)
     return players
 }
 
-footballPlayers.reduce(groupByCountry, playerByCountry)
-
+const playerByCountry = footballPlayers.reduce(groupByCountry, { france: [], england: [], spain: [] })
 console.log(playerByCountry)
