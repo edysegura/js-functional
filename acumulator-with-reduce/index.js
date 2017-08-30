@@ -9,3 +9,11 @@ const footballPlayers = [
 
 const playerByCountry = { france: [], england: [], spain: [] }
 
+const groupByCountry = (players, player) => {
+    players[player.country.toLowerCase()].push(player)
+    return players
+}
+
+footballPlayers.reduce(groupByCountry, playerByCountry)
+
+console.log(playerByCountry)
