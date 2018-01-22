@@ -18,7 +18,7 @@ function fancyPrint(name) {
     console.log('*****> ' + name + ' <*****')
 }
 
-function findByFirstLetter(letter) {
+function matchFirstLetter(letter) {
     return function (name) {
         return name[0].toLowerCase() == letter.toLowerCase()
     }
@@ -29,5 +29,5 @@ names.forEach(regularPrint)
 names
     .sort()
     .reverse()
-    .filter(findByFirstLetter('e'))
+    .filter(matchFirstLetter('e'))
     .forEach(fancyPrint)
