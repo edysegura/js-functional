@@ -1,16 +1,16 @@
-"use strict";
+"use strict"
 
 const items = [
   {name: 'New York Steak', price: 30.50},
   {name: 'Bone shake', price: 13.50},
   {name: 'Coffee', price: 3.22}
-];
+]
 
-const adder = (previousValue, currentValue) => previousValue + currentValue;
-const onlyPrice = item => item.price;
+const adder = (previousValue, currentValue) => previousValue + currentValue
+const onlyPrice = item => item.price
 
 const total = items
               .map(onlyPrice)
-              .reduce(adder);
+              .reduce(adder)
 
-console.log('Total: ' + total);
+console.log('Total: ' + total)
