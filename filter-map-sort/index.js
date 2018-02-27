@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 const collection = [
   {name:"Lidy", gender:"female"},
@@ -13,14 +13,14 @@ const collection = [
   {name:"", gender:"unknown"},
   {name:"Colin", gender:"male"},
   {name:"Luciano", gender:"male"}
-];
+]
 
-const hasName = item => !!item.name; //it outputs a boolean
-const onlyName = item => item.name;
+const hasName = item => !!item.name //it outputs a boolean
+const onlyName = item => item.name
 
 const orderedNames = collection
                     .filter(hasName)
                     .map(onlyName)
-                    .sort();
+                    .sort()
 
-console.log(orderedNames);
+console.log(orderedNames)
