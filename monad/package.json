@@ -5,6 +5,7 @@
   "author": "Edy Segura",
   "license": "MIT",
   "dependencies": {
-    "baconjs": "^2.0.5"
+    "baconjs": "^2.0.5",
+    "node-fetch": "^2.0.0"
   }
 }
