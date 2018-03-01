@@ -4,7 +4,7 @@ This is a collection of examples to demonstrate how to take advantage of functio
 
 ## How to run these examples?
 
-First you need to have [Node.js](https://nodejs.org/en/) installed and then navigate to directory of your choice and then run the command below: 
+First you need to have [Node.js](https://nodejs.org/en/) installed and then navigate to directory of your choice and then run the command below:
 
 `node index.js`
 
@@ -25,7 +25,7 @@ You may consider to use [JS Bin](http://jsbin.com/?js,console) as an alternative
  - [Functional programming and JavaScript Arrays](http://zabana.me/notes/functional-programming-and-javascript-arrays.html)
 
  ----
-In case you have doubt why I'm not using semicolon is because I got inspiration from these talks: 
+In case you have doubt why I'm not using semicolon is because I got inspiration from these talks:
 
 - [Semicolons cannot save you!](https://www.youtube.com/watch?v=Qlr-FGbhKaI)
 - [Are Semicolons Necessary in JavaScript?](https://www.youtube.com/watch?v=gsfbh17Ax9I)
