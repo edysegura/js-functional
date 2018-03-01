@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const Bacon = require('baconjs')
 
 function getInPortuguese(word) {
-  const apiKey = ''
+  const apiKey = 'AIzaSyBiWb2BcX3XPtKdbi7nllyiH1tZYQrEt0M'
 
   const endpoit =
     "https://www.googleapis.com" +
