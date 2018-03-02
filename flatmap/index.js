@@ -11,3 +11,5 @@ stream
 stream.push('cat')
 stream.push('meal')
 stream.push('cow')
+stream.push('sheep')
+stream.push('dog')
