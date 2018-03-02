@@ -1,5 +1,5 @@
-const { getInPortuguese } = require('./translate.service')
 const Bacon = require('baconjs')
+const { getInPortuguese } = require('./translate.service')
 
 const stream = new Bacon.Bus()
 
