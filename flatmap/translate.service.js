@@ -1,10 +1,10 @@
 const fetch = require('node-fetch')
 const Bacon = require('baconjs')
 
-function getInPortuguese(word) {
+function buildEndpoint(word) {
   const apiKey = ''
 
-  const endpoit =
+  const endpoint =
     "https://www.googleapis.com" +
       "/language/translate/v2" +
       "?key=" + apiKey +
@@ -12,19 +12,24 @@ function getInPortuguese(word) {
       "&target=pt" +
       "&q=" + encodeURIComponent(word)
 
-    const promise = fetch(endpoit)
-      .then(response => response.json())
-      .then(
-        responseJson =>
-          responseJson
-            .data
-            .translations[0]
-            .translatedText
-      )
-      .catch(error => console.log(error))
+  return endpoint
+}
 
-  const stream = Bacon.fromPromise(promise)
-  return stream
+function getInPortuguese(word) {
+  const endpoint = buildEndpoint(word)
+
+  const promise = fetch(endpoint)
+    .then(response => response.json())
+    .then(
+      responseJson =>
+        responseJson
+          .data
+          .translations[0]
+          .translatedText
+    )
+    .catch(error => console.log(error))
+
+  return Bacon.fromPromise(promise)
 }
 
 module.exports = {
