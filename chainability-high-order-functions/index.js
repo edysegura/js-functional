@@ -18,13 +18,10 @@ function fancyPrint(name) {
   console.log('*****> ' + name + ' <*****')
 }
 
-function matchFirstLetter(letter) {
-  return function (name) {
-    return name[0].toLowerCase() == letter.toLowerCase()
-  }
-}
-
 names.forEach(regularPrint)
+function matchFirstLetter(letter) {
+  return (name) => name.charAt(0).toLowerCase() == letter.toLowerCase()
+}
 
 names
   .sort()
