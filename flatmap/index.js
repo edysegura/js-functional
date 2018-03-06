@@ -8,8 +8,5 @@ stream
   .map(word => word.toUpperCase())
   .onValue(word => console.log(word))
 
-stream.push('cat')
-stream.push('meal')
-stream.push('cow')
-stream.push('sheep')
-stream.push('dog')
+const words = ['cat', 'meal', 'cow', 'sheep']
+words.forEach(word => stream.push(word))
