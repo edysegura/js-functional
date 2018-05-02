@@ -30,5 +30,5 @@ const tasks = [
   addTax
 ]
 
-let total = tasks.reduce(taskExecutor, items)
+const total = tasks.reduce(taskExecutor, items)
 console.log('Total: ' + total.toFixed(2))
