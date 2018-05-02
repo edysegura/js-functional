@@ -1,10 +1,10 @@
-const adder = (param) => console.log('adder', param)
-const addtip = (param) => console.log('adder', param)
-const taxes = (param) => console.log('taxes', param)
+const adder = (param) => param + 1
+const addtip = (param) => param * 1.15
+const taxes = (param) => param * 1.13
 
 const compose = (...functions) => (...params) => {
-  functions.forEach(pipe => pipe(params))
+  return functions.map(pipe => pipe(params))
 }
 const composedFunction = compose(adder, addtip, taxes)
 
-composedFunction('37')
+console.log(composedFunction('37'))
