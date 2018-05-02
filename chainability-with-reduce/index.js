@@ -9,21 +9,18 @@ function taskExecutor(params, task) {
 }
 
 function getSum(items) {
-  const adder = function(sum, item) {
-    sum += item.price
-    return sum
-  }
-  let result = items.reduce(adder, 0)
+  const adder = (sum, item) => sum + item.price
+  const result = items.reduce(adder, 0)
   return result
 }
 
 function addTip(value) {
-  let result = value * 1.15; //adding 15% of tip
+  const result = value * 1.15; //adding 15% of tip
   return result
 }
 
 function addTax(value) {
-  let result = value * 1.13; //adding 13% of HST
+  const result = value * 1.13; //adding 13% of HST
   return result
 }
 
