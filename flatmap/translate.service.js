@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const Bacon = require('baconjs')
 
 function buildEndpoint(word) {
-  const apiKey = ''
+  const apiKey = process.env.API_KEY
 
   const endpoint =
     "https://www.googleapis.com" +

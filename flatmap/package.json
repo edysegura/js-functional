@@ -1,11 +1,14 @@
 {
-  "name": "monad",
-  "version": "1.0.0",
   "private": true,
   "author": "Edy Segura",
-  "license": "MIT",
+  "scripts": {
+    "start": "node -r dotenv/config index.js"
+  },
   "dependencies": {
-    "baconjs": "^2.0.5",
-    "node-fetch": "^2.0.0"
+    "baconjs": "^2.0.9",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.1.0"
   }
 }
