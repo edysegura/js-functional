@@ -1,4 +1,3 @@
-
 const names = [
   'Diego',
   'Dulval',
@@ -19,11 +18,10 @@ function fancyPrint(name) {
 }
 
 function matchFirstLetter(letter) {
-  return (name) => name.charAt(0).toLowerCase() == letter.toLowerCase()
+  return name => name.charAt(0).toLowerCase() == letter.toLowerCase()
 }
 
-names
-  .forEach(regularPrint)
+names.forEach(regularPrint)
 
 names
   .sort()
