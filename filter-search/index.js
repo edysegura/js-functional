@@ -8,7 +8,9 @@ const users = [
 ]
 
 const searchByName = name => user => {
-  return new RegExp(name, 'i').test(user.name)
+  const caseInsensitive = 'i'
+  const pattern = new RegExp(name, caseInsensitive)
+  return pattern.test(user.name)
 }
 
 const result = users.filter(searchByName('am'))
