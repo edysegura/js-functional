@@ -7,7 +7,12 @@ const users = [
   { id: 97, name: 'Oliver', age: 28, group: 'admin' }
 ]
 
-const lookupTable = users.reduce((accumulator, it) => (accumulator[it.id] = it, accumulator), {})
+const indexingById = (accumulator, it) => {
+  accumulator[it.id] = it
+  return accumulator
+}
+
+const lookupTable = users.reduce(indexingById, {})
 
 console.log(lookupTable)
 console.log(lookupTable[11].name)
