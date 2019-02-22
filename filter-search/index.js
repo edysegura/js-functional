@@ -13,6 +13,8 @@ const searchByName = name => user => {
   return pattern.test(user.name)
 }
 
-const result = users.filter(searchByName('am'))
+const criteria = 'am'
+const result = users.filter(searchByName(criteria))
 
+console.log('Serching by: ' + criteria)
 console.log(result)
