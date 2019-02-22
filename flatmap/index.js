@@ -1,3 +1,5 @@
+'use strict'
+
 const Bacon = require('baconjs')
 const { getInPortuguese } = require('./translate.service')
 
