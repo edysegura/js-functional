@@ -6,8 +6,8 @@ const coordinates = {
   alt: 100
 }
 
-const convertToQueryString = param => {
-  const [ key, value ] = param
+const convertToQueryString = property => {
+  const [ key, value ] = property
   return encodeURIComponent(key) + '=' + encodeURIComponent(value)
 }
 
@@ -15,4 +15,4 @@ const queryString = Object.entries(coordinates)
   .map(convertToQueryString)
   .join('&')
 
-console.log(queryString)
+console.log(queryString) // lat=45&lng=6&alt=100
