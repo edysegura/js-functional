@@ -2,16 +2,10 @@ const fetch = require('node-fetch')
 const Bacon = require('baconjs')
 
 function buildEndpoint(word) {
+  const translateAPI = 'https://www.googleapis.com/language/translate/v2'
   const apiKey = process.env.API_KEY
-
-  const endpoint =
-    'https://www.googleapis.com' +
-    '/language/translate/v2' +
-    '?key=' + apiKey +
-    '&source=en' +
-    '&target=pt' +
-    '&q=' +
-    encodeURIComponent(word)
+  const params = `?key=${apiKey}&source=en&target=pt&q=${encodeURIComponent(word)}`
+  const endpoint = `${translateAPI}/${params}`
 
   return endpoint
 }
