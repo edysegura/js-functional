@@ -4,8 +4,11 @@ const Bacon = require('baconjs')
 function buildEndpoint(word) {
   const translateAPI = 'https://www.googleapis.com/language/translate/v2'
   const apiKey = process.env.API_KEY
-  const params = `?key=${apiKey}&source=en&target=pt&q=${encodeURIComponent(word)}`
-  const endpoint = `${translateAPI}/${params}`
+  const source = 'en'
+  const target = 'pt'
+  const encodedWord = encodeURIComponent(word)
+  const query = `?key=${apiKey}&source=${source}&target=${target}&q=${encodedWord}`
+  const endpoint = `${translateAPI}/${query}`
 
   return endpoint
 }
