@@ -8,7 +8,7 @@ const coordinates = {
 
 const convertToQueryString = property => {
   const [ key, value ] = property
-  return encodeURIComponent(key) + '=' + encodeURIComponent(value)
+  return `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
 }
 
 const queryString = Object.entries(coordinates)
