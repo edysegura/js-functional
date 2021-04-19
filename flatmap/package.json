@@ -5,8 +5,8 @@
     "start": "node -r dotenv/config index.js"
   },
   "dependencies": {
-    "baconjs": "^2.0.13",
-    "node-fetch": "^2.6.1"
+    "axios": "^0.21.1",
+    "baconjs": "^2.0.13"
   },
   "devDependencies": {
     "dotenv": "^6.1.0"
