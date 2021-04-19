@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+const axios = require('axios')
 const Bacon = require('baconjs')
 
 function buildEndpoint(word) {
@@ -16,9 +16,8 @@ function buildEndpoint(word) {
 function getInPortuguese(word) {
   const endpoint = buildEndpoint(word)
 
-  const promise = fetch(endpoint)
-    .then(response => response.json())
-    .then(responseJson => responseJson.data.translations[0].translatedText)
+  const promise = axios(endpoint)
+    .then(response => response.data.data.translations[0].translatedText)
     .catch(error => console.log(error))
 
   return Bacon.fromPromise(promise)
