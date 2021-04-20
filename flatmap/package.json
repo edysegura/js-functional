@@ -1,6 +1,7 @@
 {
   "private": true,
   "author": "Edy Segura",
+  "type": "module",
   "scripts": {
     "start": "node -r dotenv/config index.js"
   },
