@@ -10,6 +10,7 @@
     "baconjs": "^2.0.13"
   },
   "devDependencies": {
+    "@types/baconjs": "^3.0.0",
     "dotenv": "^6.1.0"
   }
 }
