@@ -1,7 +1,7 @@
 'use strict'
 
-const Bacon = require('baconjs')
-const { getInPortuguese } = require('./translate.service')
+import Bacon from 'baconjs'
+import { getInPortuguese } from './translate.service.js'
 
 const stream = new Bacon.Bus()
 

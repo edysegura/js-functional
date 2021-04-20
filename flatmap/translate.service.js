@@ -1,5 +1,5 @@
-const axios = require('axios')
-const Bacon = require('baconjs')
+import axios from 'axios'
+import Bacon from 'baconjs'
 
 function buildEndpoint(word) {
   const translateAPI = 'https://www.googleapis.com/language/translate/v2'
@@ -13,7 +13,7 @@ function buildEndpoint(word) {
   return endpoint
 }
 
-function getInPortuguese(word) {
+export function getInPortuguese(word) {
   const endpoint = buildEndpoint(word)
 
   const promise = axios(endpoint)
@@ -21,8 +21,4 @@ function getInPortuguese(word) {
     .catch(error => console.log(error))
 
   return Bacon.fromPromise(promise)
-}
-
-module.exports = {
-  getInPortuguese
 }
