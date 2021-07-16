@@ -17,10 +17,12 @@ const collection = [
 
 const hasName = item => !!item.name //it outputs a boolean
 const onlyName = item => item.name
+const addFirula = name => `-> ${name.toUpperCase()} <-`
 
 const orderedNames = collection
                       .filter(hasName)
                       .map(onlyName)
+                      .map(addFirula)
                       .sort()
 
 console.log(orderedNames)
