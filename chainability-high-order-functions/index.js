@@ -14,14 +14,12 @@ function regularPrint(name) {
 }
 
 function fancyPrint(name) {
-  console.log('*****> ' + name + ' <*****')
+  console.log(`💀 ${name} 💀`)
 }
 
 function matchFirstLetter(letter) {
   return name => name.charAt(0).toLowerCase() == letter.toLowerCase()
 }
-
-names.forEach(regularPrint)
 
 names
   .sort()
