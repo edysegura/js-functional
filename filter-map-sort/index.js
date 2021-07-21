@@ -16,13 +16,12 @@ const collection = [
 ];
 
 const hasName = item => !!item.name //it outputs a boolean
-const onlyName = item => item.name
-const addFirula = name => `-> ${name.toUpperCase()} <-`
+const addFirula = item => ({ name: `-> ${item.name.toUpperCase()} <-`, ...item })
+const byAlphabeticalOrder = (userA, userB) => userA.name.localeCompare(userB.name)
 
 const orderedNames = collection
-                      .filter(hasName)
-                      .map(onlyName)
-                      .map(addFirula)
-                      .sort()
+  .filter(hasName)
+  .map(addFirula)
+  .sort(byAlphabeticalOrder)
 
-console.log(orderedNames)
+console.table(orderedNames)
