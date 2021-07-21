@@ -1,5 +1,3 @@
-"use strict"
-
 const peopleList = [
   { name: 'Lidy', gender: 'female' },
   { name: '', gender: 'unknown' },
@@ -15,7 +13,7 @@ const peopleList = [
   { name: 'Luciano', gender: 'male' }
 ]
 
-const hasName = item => !!item.name // it outputs a boolean
+const hasName = item => !!item.name
 const addFirula = item => ({ ...item, name: `🎀 ${item.name.toUpperCase()} 🎀` })
 const byAlphabeticalOrder = (personA, personB) => personA.name.localeCompare(personB.name)
 
