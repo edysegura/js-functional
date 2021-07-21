@@ -13,7 +13,7 @@ const peopleList = [
   { name: '', gender: 'unknown' },
   { name: 'Colin', gender: 'male' },
   { name: 'Luciano', gender: 'male' }
-];
+]
 
 const hasName = item => !!item.name // it outputs a boolean
 const addFirula = item => ({ ...item, name: `🎀 ${item.name.toUpperCase()} 🎀` })
