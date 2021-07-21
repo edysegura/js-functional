@@ -17,7 +17,7 @@ const peopleList = [
 
 const hasName = item => !!item.name // it outputs a boolean
 const addFirula = item => ({ ...item, name: `🎀 ${item.name.toUpperCase()} 🎀` })
-const byAlphabeticalOrder = (userA, userB) => userA.name.localeCompare(userB.name)
+const byAlphabeticalOrder = (personA, personB) => personA.name.localeCompare(personB.name)
 
 const orderedNames = peopleList
   .filter(hasName)
@@ -25,4 +25,3 @@ const orderedNames = peopleList
   .sort(byAlphabeticalOrder)
 
 console.table(orderedNames)
-console.table(peopleList)
