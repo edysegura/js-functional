@@ -1,5 +1,3 @@
-'use strict'
-
 const footballPlayers = [
   { gender: "M", name: "Karim Benzema", age: 29, club: "Real Madrid CF", country: "Spain" },
   { gender: "M", name: "Samir Nasri", age: 29, club: "Sevilla FC", country: "Spain" },
