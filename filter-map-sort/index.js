@@ -1,6 +1,6 @@
 "use strict"
 
-const collection = [
+const peopleList = [
   { name: 'Lidy', gender: 'female' },
   { name: '', gender: 'unknown' },
   { name: 'Guto', gender: 'male' },
@@ -15,13 +15,14 @@ const collection = [
   { name: 'Luciano', gender: 'male' }
 ];
 
-const hasName = item => !!item.name //it outputs a boolean
-const addFirula = item => ({ name: `-> ${item.name.toUpperCase()} <-`, ...item })
+const hasName = item => !!item.name // it outputs a boolean
+const addFirula = item => ({ ...item, name: `🎀 ${item.name.toUpperCase()} 🎀` })
 const byAlphabeticalOrder = (userA, userB) => userA.name.localeCompare(userB.name)
 
-const orderedNames = collection
+const orderedNames = peopleList
   .filter(hasName)
   .map(addFirula)
   .sort(byAlphabeticalOrder)
 
 console.table(orderedNames)
+console.table(peopleList)
