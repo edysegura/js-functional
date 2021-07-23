@@ -1,5 +1,3 @@
-'use strict'
-
 const coordinates = {
   lat: 45,
   lng: 6,
