@@ -5,8 +5,10 @@ const items = [
 ]
 
 const onlyPrice = item => item.price
-const adder = (previousValue, currentValue) => previousValue + currentValue
+const adder = (accumulator, currentValue) => accumulator + currentValue
 
-const total = items.map(onlyPrice).reduce(adder)
+const total = items
+  .map(onlyPrice)
+  .reduce(adder)
 
-console.log('Total: ' + total)
+console.log(`Total: ${total}`)
