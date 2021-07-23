@@ -1,5 +1,3 @@
-"use strict"
-
 const items = [
   { name: 'New York Steak', price: 30.50 },
   { name: 'Bone shake', price: 13.50 },
