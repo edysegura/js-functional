@@ -14,12 +14,12 @@ const peopleList = [
 ]
 
 const hasName = item => !!item.name
-const addFirula = item => ({ ...item, name: `🎀 ${item.name.toUpperCase()} 🎀` })
+const addDecoration = item => ({ ...item, name: `🎀 ${item.name.toUpperCase()} 🎀` })
 const byAlphabeticalOrder = (personA, personB) => personA.name.localeCompare(personB.name)
 
 const orderedNames = peopleList
   .filter(hasName)
-  .map(addFirula)
+  .map(addDecoration)
   .sort(byAlphabeticalOrder)
 
 console.table(orderedNames)
