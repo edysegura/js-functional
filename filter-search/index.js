@@ -1,5 +1,3 @@
-'use strict'
-
 const users = [
   { id: 11, name: 'Adam', age: 23, group: 'editor' },
   { id: 47, name: 'John', age: 28, group: 'admin' },
