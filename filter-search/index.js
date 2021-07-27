@@ -15,4 +15,4 @@ const criteria = 'am'
 const result = users.filter(searchByName(criteria))
 
 console.log('Searching by: ' + criteria)
-console.log(result)
+console.table(result)
