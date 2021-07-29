@@ -1,5 +1,3 @@
-'use strict'
-
 import Bacon from 'baconjs'
 import { getInPortuguese } from './translate.service.js'
 
