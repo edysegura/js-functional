@@ -1,9 +1,9 @@
 const names = [
-  'Diego',
-  'Dulval',
-  'João',
+  'Eric',
+  'Hugão',
+  'Lucas',
   'Edy',
-  'Christian',
+  'Daniel',
   'Pedro',
   'Ana',
   'Evelin'
