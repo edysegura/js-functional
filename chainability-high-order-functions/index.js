@@ -6,7 +6,7 @@ const names = [
   'Daniel',
   'Pedro',
   'Ana',
-  'Evelin'
+  'Evelin',
 ]
 
 function regularPrint(name) {
@@ -21,6 +21,7 @@ function matchFirstLetter(letter) {
   return (name) => name.charAt(0).toLowerCase() == letter.toLowerCase()
 }
 
+// prettier-ignore
 names
   .sort()
   .reverse()
