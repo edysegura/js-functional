@@ -6,7 +6,7 @@
     "start": "node -r dotenv/config index.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "baconjs": "^2.0.13"
   },
   "devDependencies": {
